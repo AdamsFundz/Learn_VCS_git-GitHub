@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Linux</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main class="container section">
+    <a href="../index.html">← Back to syllabus</a>
+    <h1>Git on Linux</h1>
+    <p>These installation examples are for Ubuntu and Debian-based systems.</p>
+
+    <h2>1. Install Git</h2>
+    <pre><code>sudo apt update
+sudo apt install git
+git --version</code></pre>
+
+    <h2>2. Configure Git</h2>
+    <pre><code>git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --global --list</code></pre>
+
+    <h2>3. Navigate folders</h2>
+    <pre><code>pwd
+ls -a
+cd ~/Documents
+mkdir practice</code></pre>
+
+    <h2>4. Clone and contribute</h2>
+    <pre><code>git clone https://github.com/OWNER/REPO.git
+cd REPO
+git switch -c feature/my-change
+git status
+git add .
+git commit -m "Describe my changes"
+git push -u origin feature/my-change</code></pre>
+
+    <div class="notice">
+      Other Linux distributions may use different package managers.
+      For example, Fedora uses DNF. The Git workflow remains the same.
+    </div>
+  </main>
+</body>
+</html>

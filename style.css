@@ -1,0 +1,387 @@
+
+:root {
+  --bg: #11151c;
+  --panel: #1a202a;
+  --panel-light: #232c39;
+  --text: #edf2f8;
+  --muted: #aab6c6;
+  --accent: #91c8ff;
+  --green: #a5e8ca;
+  --border: #354153;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 Arial, sans-serif;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background: #0d1117;
+  color: var(--green);
+  padding: 3px 6px;
+  border-radius: 5px;
+  overflow-wrap: anywhere;
+}
+
+.hero {
+  background: linear-gradient(135deg, #192535, #202e40);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  margin-right: auto;
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+.brand span,
+.hero h1 span {
+  color: var(--accent);
+}
+
+.nav-link {
+  color: var(--muted);
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 55px 20px 75px;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 7vw, 4rem);
+  line-height: 1.1;
+  margin: 10px 0;
+}
+
+.hero-content > p:not(.eyebrow) {
+  max-width: 620px;
+  color: var(--muted);
+}
+
+.eyebrow {
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.section {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.section h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin: 5px 0 10px;
+}
+
+.section h3 {
+  margin-bottom: 8px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.device-grid,
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.device-card,
+.panel,
+.lesson,
+.question {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 20px;
+}
+
+.device-card {
+  display: block;
+  color: var(--text);
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.device-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.device-icon {
+  font-size: 2rem;
+}
+
+.device-card p {
+  color: var(--muted);
+}
+
+.text-link {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.notice {
+  margin-top: 20px;
+  padding: 15px;
+  background: #1b2a39;
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+}
+
+.warning {
+  background: #30291d;
+  border-left-color: #f4c66f;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 11px 17px;
+  background: #29435d;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 8px 5px 8px 0;
+}
+
+.button:hover {
+  background: #365775;
+}
+
+.button.secondary {
+  background: transparent;
+  border-color: var(--border);
+}
+
+.workflow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.workflow div {
+  flex: 1;
+  min-width: 105px;
+  padding: 15px 8px;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
+.workflow b,
+.workflow strong,
+.workflow small {
+  display: block;
+}
+
+.workflow b {
+  color: var(--green);
+  font-size: 1.4rem;
+}
+
+.workflow small {
+  color: var(--muted);
+}
+
+.subheading {
+  margin-top: 35px;
+}
+
+.progress-track {
+  height: 9px;
+  background: var(--panel-light);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#progressBar {
+  width: 0;
+  height: 100%;
+  background: var(--green);
+  transition: width 0.25s;
+}
+
+.lesson-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.lesson label {
+  cursor: pointer;
+}
+
+.lesson-check {
+  accent-color: var(--green);
+  transform: scale(1.15);
+  margin-right: 7px;
+}
+
+.lesson ul {
+  color: var(--muted);
+  padding-left: 25px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+  background: var(--panel);
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  text-align: left;
+  padding: 12px;
+  vertical-align: top;
+}
+
+th {
+  background: var(--panel-light);
+}
+
+.question {
+  margin: 18px 0;
+}
+
+.question legend {
+  padding: 0 6px;
+  font-weight: bold;
+}
+
+.question label {
+  display: block;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.question input {
+  accent-color: var(--accent);
+}
+
+details {
+  padding: 15px;
+  margin: 12px 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+}
+
+summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+footer {
+  padding: 35px 20px;
+  text-align: center;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    gap: 12px;
+  }
+
+  .brand {
+    width: 100%;
+  }
+
+  .hero-content {
+    padding-top: 35px;
+  }
+
+  .workflow {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .workflow > span {
+    text-align: center;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .hero,
+  .device-card,
+  .panel,
+  .lesson,
+  .question,
+  details,
+  table {
+    background: white;
+    color: black;
+  }
+
+  .navbar,
+  .button {
+    display: none;
+  }
+
+  .section {
+    break-inside: avoid;
+  }
+}

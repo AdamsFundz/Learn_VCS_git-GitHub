@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Android</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main class="container section">
+    <a href="../index.html">← Back to syllabus</a>
+    <h1>Git on Android</h1>
+    <p>Use Termux to run Git commands directly on your phone.</p>
+
+    <h2>1. Install Git</h2>
+    <pre><code>pkg update
+pkg upgrade
+pkg install git
+git --version</code></pre>
+
+    <h2>2. Configure Git</h2>
+    <pre><code>git config --global user.name "AdamsFundz"
+git config --global user.email "your-email@example.com"
+git config --global --list</code></pre>
+
+    <h2>3. Navigate your folders</h2>
+    <pre><code>pwd
+ls -a
+cd ~/projects
+mkdir practice
+cd practice</code></pre>
+
+    <h2>4. Start or download a repository</h2>
+    <pre><code>git init
+
+# Or clone an existing project:
+git clone https://github.com/OWNER/REPO.git
+cd REPO</code></pre>
+
+    <h2>5. Daily workflow</h2>
+    <pre><code>git status
+git diff
+git add .
+git diff --cached
+git commit -m "Describe my changes"
+git push</code></pre>
+
+    <div class="notice warning">
+      Run git push only after your branch has a remote and the required
+      authentication is configured. The first push may need
+      git push -u origin BRANCH.
+    </div>
+
+    <h2>Remember</h2>
+    <ul>
+      <li>Termux commands are case-sensitive.</li>
+      <li>Keep working in the original repository folder.</li>
+      <li>Copying a project into another folder does not automatically sync the copies.</li>
+    </ul>
+  </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Windows</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main class="container section">
+    <a href="../index.html">← Back to syllabus</a>
+    <h1>Git on Windows</h1>
+    <p>Install Git for Windows from
+      <a href="https://git-scm.com/install/windows">the official Git website</a>.
+    </p>
+
+    <h2>1. Open Git Bash or PowerShell</h2>
+    <p>Git Bash provides a Unix-like shell. PowerShell is the Windows command shell.</p>
+
+    <h2>2. Check installation</h2>
+    <pre><code>git --version
+git config --global --list</code></pre>
+
+    <h2>3. Configure Git</h2>
+    <pre><code>git config --global user.name "Your Name"
+git config --global user.email "you@example.com"</code></pre>
+
+    <h2>4. Navigate folders</h2>
+    <p>In PowerShell:</p>
+    <pre><code>Get-Location
+Get-ChildItem
+Set-Location Documents
+New-Item -ItemType Directory practice</code></pre>
+
+    <p>In Git Bash, you can use:</p>
+    <pre><code>pwd
+ls -a
+cd ~/Documents
+mkdir practice</code></pre>
+
+    <h2>5. Use Git</h2>
+    <pre><code>git clone https://github.com/OWNER/REPO.git
+cd REPO
+git status
+git switch -c feature/my-change
+git add .
+git commit -m "Describe my changes"
+git push -u origin feature/my-change</code></pre>
+
+    <div class="notice">
+      The Git commands are the same as on Android. Folder navigation
+      differs depending on whether you use PowerShell or Git Bash.
+    </div>
+  </main>
+</body>
+</html>

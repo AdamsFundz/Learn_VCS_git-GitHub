@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>macOS</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main class="container section">
+    <a href="../index.html">← Back to syllabus</a>
+    <h1>Git on macOS</h1>
+
+    <h2>1. Open Terminal</h2>
+    <p>Open Applications → Utilities → Terminal.</p>
+
+    <h2>2. Check Git</h2>
+    <pre><code>git --version</code></pre>
+    <p>If Git is missing, macOS may offer Command Line Tools.
+      Follow the installation prompt. Alternatively, use the official
+      <a href="https://git-scm.com/install/mac">Git for macOS instructions</a>.
+    </p>
+
+    <h2>3. Configure Git</h2>
+    <pre><code>git config --global user.name "Your Name"
+git config --global user.email "you@example.com"</code></pre>
+
+    <h2>4. Navigate folders</h2>
+    <pre><code>pwd
+ls -a
+cd ~/Documents
+mkdir practice</code></pre>
+
+    <h2>5. Work with a repository</h2>
+    <pre><code>git clone https://github.com/OWNER/REPO.git
+cd REPO
+git status
+git switch -c feature/my-change
+git add .
+git commit -m "Describe my changes"
+git push -u origin feature/my-change</code></pre>
+
+    <div class="notice">
+      macOS Terminal uses a Unix-like shell. The everyday Git workflow
+      is essentially the same as on Linux and Termux.
+    </div>
+  </main>
+</body>
+</html>

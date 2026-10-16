@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner-friendly Git and GitHub VCS syllabus for Android, Windows, macOS and Linux users.">
+  <title>AdamsFundz | Git & GitHub </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <a href="#syllabus" class="nav-link">Syllabus</a>
+      <a href="#devices" class="nav-link">Choose Device</a>
+      <a href="#quiz" class="nav-link">Revision</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">VERSION CONTROL SYSTEMS</p>
+      <h1>Master Git &amp; <span>GitHub</span></h1>
+      <p>Learn version control step by step, from your first terminal command to contributing to real projects.</p>
+      <a class="button" href="#devices">Choose your device</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section" id="devices">
+      <p class="eyebrow">STEP 01</p>
+      <h2>Choose your device</h2>
+      <p class="muted">Select your operating system to see the appropriate terminal, setup instructions and commands.</p>
+
+      <div class="device-grid">
+        <a class="device-card" href="pages/android.html">
+          <span class="device-icon">📱</span>
+          <h3>Android</h3>
+          <p>Termux, shell commands and phone storage.</p>
+          <span class="text-link">Android guide →</span>
+        </a>
+
+        <a class="device-card" href="pages/windows.html">
+          <span class="device-icon">💻</span>
+          <h3>Windows</h3>
+          <p>Git for Windows, PowerShell and Git Bash.</p>
+          <span class="text-link">Windows guide →</span>
+        </a>
+
+        <a class="device-card" href="pages/macos.html">
+          <span class="device-icon">🍎</span>
+          <h3>macOS</h3>
+          <p>Terminal, Git and command-line tools.</p>
+          <span class="text-link">Mac guide →</span>
+        </a>
+
+        <a class="device-card" href="pages/linux.html">
+          <span class="device-icon">🐧</span>
+          <h3>Linux</h3>
+          <p>Terminal, package managers and Git.</p>
+          <span class="text-link">Linux guide →</span>
+        </a>
+      </div>
+
+      <div class="notice">
+        <strong>Important:</strong> Git commands such as <code>git status</code>,
+        <code>git add</code> and <code>git commit</code> work across these systems.
+        Installing Git, navigating folders and managing permissions may differ.
+      </div>
+    </section>
+
+    <section class="section" id="basics">
+      <p class="eyebrow">STEP 02</p>
+      <h2>Understand VCS first</h2>
+      <div class="info-grid">
+        <article class="panel">
+          <h3>What is VCS?</h3>
+          <p>A Version Control System records changes to files over time. It helps you track edits, compare versions and collaborate without losing control of your work.</p>
+        </article>
+        <article class="panel">
+          <h3>Git vs GitHub</h3>
+          <p><strong>Git</strong> tracks changes. <strong>GitHub</strong> hosts Git repositories online and provides tools for pull requests, issues and code reviews.</p>
+        </article>
+      </div>
+
+      <h3 class="subheading">The Git workflow</h3>
+      <div class="workflow">
+        <div><b>1</b><strong>Edit</strong><small>Change a file</small></div>
+        <span>→</span>
+        <div><b>2</b><strong>Stage</strong><small><code>git add</code></small></div>
+        <span>→</span>
+        <div><b>3</b><strong>Commit</strong><small><code>git commit</code></small></div>
+        <span>→</span>
+        <div><b>4</b><strong>Push</strong><small><code>git push</code></small></div>
+      </div>
+    </section>
+
+    <section class="section" id="syllabus">
+      <p class="eyebrow">STEP 03</p>
+      <h2>Complete course syllabus</h2>
+      <p class="muted">Tick each topic as you master it. Your progress is saved in this browser.</p>
+      <div class="progress-track"><div id="progressBar"></div></div>
+      <p id="progressText" class="muted">0 topics completed</p>
+
+      <div class="lesson-list">
+        <article class="lesson">
+          <label><input type="checkbox" class="lesson-check"> <strong>Module 1: Foundations</strong></label>
+          <ul>
+            <li>VCS, Git and GitHub</li>
+            <li>Repository, working tree, staging area and commits</li>
+            <li>Local repositories vs remote repositories</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <label><input type="checkbox" class="lesson-check"> <strong>Module 2: Terminal fundamentals</strong></label>
+          <ul>
+            <li><code>pwd</code>, <code>ls</code>, <code>cd</code>, <code>mkdir</code></li>
+            <li>Paths, hidden files, copying and moving files</li>
+            <li>Understanding options, arguments and command syntax</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <label><input type="checkbox" class="lesson-check"> <strong>Module 3: Git setup and configuration</strong></label>
+          <ul>
+            <li><code>git --version</code>, <code>git config</code>, <code>git init</code></li>
+            <li><code>git clone</code> and repository navigation</li>
+            <li>Username, email and authentication safety</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <label><input type="checkbox" class="lesson-check"> <strong>Module 4: Changes and commits</strong></label>
+          <ul>
+            <li><code>git status</code>, <code>git diff</code>, <code>git diff --cached</code></li>
+            <li><code>git add</code>, <code>git commit -m</code></li>
+            <li><code>git log</code>, <code>git show</code> and reading diffs</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <label><input type="checkbox" class="lesson-check"> <strong>Module 5: Branches</strong></label>
+          <ul>
+            <li><code>git branch</code>, <code>git switch</code>, <code>git checkout</code></li>
+            <li>Creating, renaming and deleting branches safely</li>
+            <li>Branch naming and isolated development</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <label><input type="checkbox" class="lesson-check"> <strong>Module 6: Remotes and GitHub</strong></label>
+          <ul>
+            <li><code>git remote -v</code>, <code>git fetch</code>, <code>git pull</code></li>
+            <li><code>git push -u origin BRANCH</code></li>
+            <li>Forks, origin vs upstream and Pull Requests</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <label><input type="checkbox" class="lesson-check"> <strong>Module 7: Collaboration</strong></label>
+          <ul>
+            <li>Merge conflicts and resolving them</li>
+            <li>README files, Issues and code reviews</li>
+            <li>Keeping a fork updated</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <label><input type="checkbox" class="lesson-check"> <strong>Module 8: Recovery and safety</strong></label>
+          <ul>
+            <li><code>git restore</code>, <code>git revert</code>, <code>git stash</code></li>
+            <li>Understanding reset and amend</li>
+            <li>Backups and avoiding destructive commands</li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <label><input type="checkbox" class="lesson-check"> <strong>Module 9: Advanced essentials</strong></label>
+          <ul>
+            <li>Merge vs rebase, tags and releases</li>
+            <li><code>.gitignore</code> and repository hygiene</li>
+            <li>SSH keys, GitHub Actions and branch protection</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="commands">
+      <p class="eyebrow">STEP 04</p>
+      <h2>Useful command reference</h2>
+      <p class="muted">Replace placeholders such as <code>BRANCH</code> or <code>URL</code> with your actual values. Do not type the placeholder word itself.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Command</th><th>Meaning</th></tr></thead>
+          <tbody>
+            <tr><td><code>git status</code></td><td>Shows the current branch and file state.</td></tr>
+            <tr><td><code>git add FILE</code></td><td>Stages a selected file's changes.</td></tr>
+            <tr><td><code>git add .</code></td><td>Stages changes beneath the current directory; inspect first.</td></tr>
+            <tr><td><code>git commit -m "MESSAGE"</code></td><td>Records staged changes with a message. <code>-m</code> supplies the message.</td></tr>
+            <tr><td><code>git diff</code></td><td>Shows changes not yet staged.</td></tr>
+            <tr><td><code>git diff --cached</code></td><td>Shows changes already staged.</td></tr>
+            <tr><td><code>git log --oneline</code></td><td>Displays compact commit history.</td></tr>
+            <tr><td><code>git switch -c BRANCH</code></td><td>Creates and switches to a new branch. <code>-c</code> means create.</td></tr>
+            <tr><td><code>git remote -v</code></td><td>Shows remote names and URLs.</td></tr>
+            <tr><td><code>git fetch origin</code></td><td>Downloads remote updates without automatically merging them.</td></tr>
+            <tr><td><code>git pull</code></td><td>Fetches and integrates updates into the current branch.</td></tr>
+            <tr><td><code>git push -u origin BRANCH</code></td><td>Pushes the branch and sets its upstream tracking branch.</td></tr>
+            <tr><td><code>git restore --staged FILE</code></td><td>Unstages a file while keeping its edits.</td></tr>
+            <tr><td><code>git revert COMMIT</code></td><td>Creates a new commit that reverses an earlier commit.</td></tr>
+            <tr><td><code>git help COMMAND</code></td><td>Opens help for a Git command.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="notice warning">
+        Don't run <code>git reset --hard</code>, <code>git clean -fd</code> or
+        <code>git push --force</code> casually. These can destroy work or rewrite shared history.
+        Understand the situation and make a backup first.
+      </div>
+    </section>
+
+    <section class="section" id="quiz">
+      <p class="eyebrow">STEP 05</p>
+      <h2>Revision quiz</h2>
+      <p>Answer all questions, then check your score and explanations.</p>
+      <form id="quizForm">
+        <fieldset class="question">
+          <legend>1. Which tool tracks file versions?</legend>
+          <label><input type="radio" name="q1" value="a"> Git</label>
+          <label><input type="radio" name="q1" value="b"> GitHub only</label>
+          <label><input type="radio" name="q1" value="c"> HTML</label>
+        </fieldset>
+        <fieldset class="question">
+          <legend>2. What does <code>git add</code> do?</legend>
+          <label><input type="radio" name="q2" value="a"> Pushes files online</label>
+          <label><input type="radio" name="q2" value="b"> Stages changes for a commit</label>
+          <label><input type="radio" name="q2" value="c"> Deletes a branch</label>
+        </fieldset>
+        <fieldset class="question">
+          <legend>3. Which command shows unstaged changes?</legend>
+          <label><input type="radio" name="q3" value="a"> <code>git push</code></label>
+          <label><input type="radio" name="q3" value="b"> <code>git diff</code></label>
+          <label><input type="radio" name="q3" value="c"> <code>git clone</code></label>
+        </fieldset>
+        <fieldset class="question">
+          <legend>4. What does <code>git fetch</code> do?</legend>
+          <label><input type="radio" name="q4" value="a"> Downloads remote updates without automatically merging them</label>
+          <label><input type="radio" name="q4" value="b"> Deletes your remote</label>
+          <label><input type="radio" name="q4" value="c"> Creates a Pull Request</label>
+        </fieldset>
+        <fieldset class="question">
+          <legend>5. What is a Pull Request?</legend>
+          <label><input type="radio" name="q5" value="a"> A terminal installation command</label>
+          <label><input type="radio" name="q5" value="b"> A request to review and merge proposed changes</label>
+          <label><input type="radio" name="q5" value="c"> A local folder</label>
+        </fieldset>
+        <button class="button" type="submit">Mark my answers</button>
+        <button class="button secondary" type="reset">Reset quiz</button>
+      </form>
+      <div id="quizResult" class="notice" aria-live="polite"></div>
+    </section>
+
+    <section class="section" id="written">
+      <p class="eyebrow">STEP 06</p>
+      <h2>Written Q&amp;A</h2>
+      <details><summary>What is the difference between Git and GitHub?</summary><p>Git is the version-control tool. GitHub hosts repositories online and supports collaboration features.</p></details>
+      <details><summary>What is the difference between a commit and a push?</summary><p>A commit saves staged changes to local Git history. A push sends commits to a remote repository.</p></details>
+      <details><summary>What is a branch?</summary><p>A separate line of development where you can make changes without directly changing another branch.</p></details>
+      <details><summary>Why should I inspect <code>git diff --cached</code>?</summary><p>It lets you check exactly which staged changes will be included in your next commit.</p></details>
+      <details><summary>What should I do when a merge conflict occurs?</summary><p>Edit the conflicting file to keep the correct final content, remove conflict markers, test, stage the resolved file and commit.</p></details>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong> AdamsFundz regards </strong></p>
+    <p>Learn it. Practise it. Understand it. Then teach someone else.</p>
+  </footer>
+</body>
+</html>
